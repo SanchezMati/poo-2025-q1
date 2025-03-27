@@ -36,7 +36,7 @@ public class ArrayIntegerList implements List <Integer>
         {
             return false;
         }
-        System.arraycopy(array, index, array, index+1, (--dim)-index);
+        System.arraycopy(array, index+1, array, index, (--dim)-index);
         return true;
     }
 

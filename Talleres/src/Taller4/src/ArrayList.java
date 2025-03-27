@@ -38,8 +38,7 @@ public class ArrayList <T> implements List <T>
         {
             return false;
         }
-        System.arraycopy(array, index, array, index+1, dim-index-1);
-        dim--;
+        System.arraycopy(array, index+1, array, index, (--dim)-index);
         return true;
     }
 
