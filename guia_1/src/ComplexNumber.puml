@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ComplexNumber
+{
+    - float realPart
+    - float imaginaryPart
+
+    + ComplexNumber(float realPart, float imaginaryPart)
+    + ComplexNumber(float realPart)
+    + float getRealPart()
+    + float getImaginaryPart()
+    + ComplexNumber sum(ComplexNumber number)
+
+}
+@enduml

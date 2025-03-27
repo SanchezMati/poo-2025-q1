@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Gear
+{
+    - int chainring
+    - double cog
+
+    + Gear(int chainring, double cog)
+    + double ratio()
+}
+
+
+@enduml

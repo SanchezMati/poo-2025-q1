@@ -1,0 +1,58 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Date
+class Affiliate
+class AffiliateSystem
+class AffiliateNumber
+
+AffiliateNumber *-- AffiliateSystem
+Affiliate *-- AffiliateNumber
+Date --* Affiliate
+
+class Date
+{
+    - int year
+    - int month
+    - int day
+
+    + Date(int year, int month, int day)
+    + int getYear()
+    + int getMonth()
+    + int getDay()
+}
+
+class AffiliateSystem
+{
+    - {static} int _INITIAL_NUMBER = 1000
+    - {static} int _NEXT_NUMBER
+
+    + int AffiliateSystem()
+    - int getAndIncrement()
+
+}
+
+class AffiliateNumber
+{
+    - int number
+    - AffiliateSystem system
+
+    + AffiliateNumber()
+    + getNumber()
+}
+
+class Affiliate
+{
+    - String name
+    - String lastName
+    - Date bornDate
+    - AffiliateNumber number
+
+    + Affiliate(String firstName, String lastName, Date bornDate)
+}
+
+
+
+
+
+@enduml
