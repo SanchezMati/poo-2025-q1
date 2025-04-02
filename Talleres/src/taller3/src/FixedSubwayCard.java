@@ -1,4 +1,4 @@
-package Taller3.src;
+package taller3.src;
 
 public class FixedSubwayCard extends SubwayCard
 {

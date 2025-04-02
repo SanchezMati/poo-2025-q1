@@ -1,4 +1,4 @@
-package Taller3.src;
+package taller3.src;
 
 abstract class SubwayCard
 {

@@ -1,3 +1,29 @@
-*.idea
+# Ignorar archivos de IntelliJ IDEA
+.idea/
 *.iml
+*.ipr
+*.iws
+
+# Ignorar archivos de compilación
 out/
+bin/
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar dependencias descargadas por Gradle/Maven
+.gradle/
+.mvn/
+*.jar
+*.war
+*.ear
+
+# Ignorar logs y archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Ignorar configuraciones de ejecución
+*.run.xml
+*.session.xml
