@@ -1,4 +1,4 @@
-package taller4;
+package taller4.list;
 
 public interface List <T>
 {

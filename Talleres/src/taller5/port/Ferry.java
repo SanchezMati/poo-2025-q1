@@ -1,4 +1,4 @@
-package taller5.Puertos;
+package taller5.port;
 
 public class Ferry {
     private final String name;

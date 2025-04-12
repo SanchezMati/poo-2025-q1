@@ -1,8 +1,8 @@
-package taller4;
+package taller4.list;
 
 import java.util.Arrays;
 
-public class ArrayList <T> implements List <T>
+public class ArrayList <T> implements List<T>
 {
     private final static int INITIAL_DIM = 5;
     private int dim;
