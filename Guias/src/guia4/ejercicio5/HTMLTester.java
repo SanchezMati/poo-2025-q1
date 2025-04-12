@@ -1,7 +1,7 @@
 package guia4.ejercicio5;
 
 public class HTMLTester {
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         PlainText text = new PlainText("Hola");
         HTMLText boldText = new BoldText(text);
         HTMLText italicText = new ItalicText(text);
@@ -23,5 +23,4 @@ public class HTMLTester {
         System.out.println(linkBoldText1); //<a href:itba.edu.ar><b><i>Ejemplo</i></b></a>
         System.out.println(linkBoldText2); //<b><a href:itba.edu.ar>Ejemplo</a></b>
     }
-    */
 }
