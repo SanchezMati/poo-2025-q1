@@ -27,13 +27,13 @@ public class PhoneNumberTester {
         /**
          * 3. Orden Natural, opción 2
          */
-        Arrays.sort(phoneNumbers, Comparator.naturalOrder());
+        Arrays.sort(phoneNumbers, Comparator.naturalOrder()); //Como funciona este?
         System.out.println(Arrays.toString(phoneNumbers));
 
         /**
          * 4. Orden Descendente con clase que implementa Comparator
          */
-        Arrays.sort(phoneNumbers, new DescendingPhoneNumberComparator());
+        Arrays.sort(phoneNumbers, new DescendingPhoneNumberComparator()); //Esta bien implementada?
         System.out.println(Arrays.toString(phoneNumbers));
 
         /**
