@@ -12,6 +12,7 @@ public class LocalDateIntervalTester {
         System.out.println(todayPlus10);
         System.out.println(todayPlus10.isAfter(today));
         System.out.println("----------");
+
         // Ejemplo de uso de la clase LocalDateInterval
         LocalDateInterval localDateInterval = new LocalDateInterval(today, todayPlus10, 3);
         for(LocalDate localDate : localDateInterval) {
