@@ -4,7 +4,6 @@ public class Brand {
     private final String name;
     private double discount;
 
-
     public Brand(String name, double discount) {
         this.name = name;
         setDiscount(discount);
@@ -16,7 +15,7 @@ public class Brand {
 
     public void setDiscount(double discount) {
         if(discount < 0 || discount > 1) {
-            //throw new InvalidDiscountException(name);
+            throw new InvalidDiscountException(name);
         }
         this.discount = discount;
     }
