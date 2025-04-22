@@ -1,4 +1,4 @@
-package Brand;
+package p1_23_01.ejercicio3;
 
 public abstract class Product {
     protected Brand brand;

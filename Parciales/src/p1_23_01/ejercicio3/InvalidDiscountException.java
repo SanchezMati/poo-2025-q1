@@ -1,4 +1,4 @@
-package Brand;
+package p1_23_01.ejercicio3;
 
 public class InvalidDiscountException extends RuntimeException {
     private static final String MESSAGE = "Invalid discount for brand %s";

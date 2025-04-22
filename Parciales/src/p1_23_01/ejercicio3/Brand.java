@@ -1,4 +1,4 @@
-package Brand;
+package p1_23_01.ejercicio3;
 
 public class Brand {
     private final String name;
