@@ -44,9 +44,9 @@ public class Feeder {
     }
 
     public Article firsUnread(Predicate<FeedType> feedTypePredicate) {
-        for (Article article : articles) {
-            if(feedTypePredicate.test(article.getFeedType()) && article.isNotRead()) {
-                return article;
+        for(int i = 0; i < dim; i++) {
+            if(feedTypePredicate.test(articles[i].getFeedType()) && articles[i].isNotRead()) {
+                return articles[i];
             }
         }
         throw new IllegalArgumentException();

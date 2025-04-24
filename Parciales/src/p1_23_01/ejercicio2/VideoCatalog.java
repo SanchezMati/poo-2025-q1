@@ -35,14 +35,16 @@ public class VideoCatalog {
     }
 
     public VideoCatalogElement[] getDescendingDateCopy() {
-        VideoCatalogElement[] toReturn = Arrays.copyOf(catalog, dim);
-        Arrays.sort(toReturn, Comparator.naturalOrder());
-        return toReturn;
+        return getDateCopy(Comparator.reverseOrder());
     }
 
     public VideoCatalogElement[] getChronologicalDateCopy() {
+        return getDateCopy(Comparator.naturalOrder());
+    }
+
+    public VideoCatalogElement[] getDateCopy(Comparator<VideoCatalogElement> cmp) {
         VideoCatalogElement[] toReturn = Arrays.copyOf(catalog, dim);
-        Arrays.sort(toReturn, Comparator.reverseOrder());
+        Arrays.sort(toReturn, cmp);
         return toReturn;
     }
 }

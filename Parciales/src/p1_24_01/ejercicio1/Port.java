@@ -16,7 +16,7 @@ public class Port {
     }
 
     protected boolean canDock(Ferry ferry, LocalTime time) {
-        return ferryCompany.equals(ferry.getCompany()) && freeDock > 0;
+        return ferryCompany.equals(ferry.getCompany()) && freeDock < docksAmount;
     }
 
     public void dock(Ferry ferry, LocalTime time) {
