@@ -2,16 +2,24 @@ package p1_23_02.ejercicio2;
 
 public class Passenger {
     private final String name;
-    private final String airlane;
+    private final String airline;
     private int passAmount;
 
-    public Passenger(String name, String airlane, int amount) {
+    public Passenger(String name, String airline, int amount) {
         this.name = name;
-        this.airlane = airlane;
+        this.airline = airline;
         this.passAmount = amount;
     }
 
     public void usePass() {
         passAmount--;
+    }
+
+    public int getPassAmount() {
+        return passAmount;
+    }
+
+    public String getAirline() {
+        return airline;
     }
 }

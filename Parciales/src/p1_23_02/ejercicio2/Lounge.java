@@ -10,27 +10,31 @@ public class Lounge {
         this.loungeCentral = loungeCentral;
     }
 
-    public boolean canEnter() {
-        return loungeCentral.isOpen() && ;
+    public boolean canEnter(Passenger passenger) {
+        return loungeCentral.isOpen() && passenger.getPassAmount() > 0;
     }
 
     public void enter(Passenger passenger) {
-        if(!canEnter()) {
+        if(!canEnter(passenger)) {
             throw new RuntimeException("Cannot enter lounge");
         }
         passenger.usePass();
         guests++;
     }
 
-    public boolean canExit() {
-        return guests != 0;
+    public boolean canExit(int n) {
+        return guests >= n;
     }
 
     public void exit() {
-        if(!canExit()) {
+        exit(1);
+    }
+
+    public void exit(int n) {
+        if(!canExit(n)) {
             throw new RuntimeException("Lounge is empty");
         }
-        guests--;
+        guests -= n;
     }
 
     @Override
