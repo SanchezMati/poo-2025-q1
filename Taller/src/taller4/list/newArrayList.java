@@ -2,7 +2,7 @@ package taller4.list;
 
 import java.util.Arrays;
 
-public class ArrayList <T> implements List<T>
+public abstract class newArrayList<T> implements newList<T>
 {
     private final static int INITIAL_DIM = 5;
     private int dim;
@@ -10,7 +10,7 @@ public class ArrayList <T> implements List<T>
 
     @SuppressWarnings("unchecked")
 
-    public ArrayList()
+    public newArrayList()
     {
         array = (T[]) new Object[INITIAL_DIM];
         dim = 0;

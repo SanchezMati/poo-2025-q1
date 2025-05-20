@@ -1,6 +1,6 @@
 package taller4.list;
 
-public interface List <T>
+public interface newList<T>
 {
     void add(T element);
     boolean remove(int index);
@@ -11,6 +11,8 @@ public interface List <T>
     {
         return remove(contains(element));
     }
+
+    int size();
 }
 
 

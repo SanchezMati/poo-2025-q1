@@ -2,7 +2,7 @@ package taller4.list;
 
 import java.util.Arrays;
 
-public class ArrayIntegerList implements List<Integer>
+public abstract class ArrayIntegerList implements newList<Integer>
 {
     private final static int INITIAL_DIM = 5;
     private int dim;

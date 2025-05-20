@@ -4,7 +4,17 @@ public class ListTester
 {
     public static void main(String[] args)
     {
-        List<Integer> integerList = new ArrayList<>();
+        newList<Integer> integerList = new newArrayList<>() {
+            @Override
+            public boolean removeElement(Integer element) {
+                return super.removeElement(element);
+            }
+
+            @Override
+            public int size() {
+                return 0;
+            }
+        };
         System.out.println(integerList.isEmpty()); // true
         integerList.add(1);
         integerList.add(4);
