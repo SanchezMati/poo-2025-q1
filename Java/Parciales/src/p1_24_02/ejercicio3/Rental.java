@@ -1,7 +1,5 @@
 package p1_24_02.ejercicio3;
 
-import slots.ParkRide;
-
 import java.time.LocalDate;
 
 public class Rental {

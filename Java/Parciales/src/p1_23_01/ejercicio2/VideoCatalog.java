@@ -3,7 +3,6 @@ package p1_23_01.ejercicio2;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Objects;
 
 public class VideoCatalog {
     private VideoCatalogElement[] catalog = new VideoCatalogElement[INITIAL_DIM];;
