@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+include prodcut.rb
+include item.rb
+include ticket.rb
 
 bayaspirina = Product.new('Bayaspirina', 99.99)
 cafiaspirina = Product.new('Cafiaspirina', 79.99)
@@ -44,4 +48,5 @@ puts third_ticket
 # Aspirinetas     1  $49.99
 # ####################
 # TOTAL $99.98
+
 

@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 
 class Ticket
   NUMERATION_START = 1000 #Constante de clase
@@ -24,3 +23,4 @@ class Ticket
     @items.map { |e| e.total}.reduce { |accum, e| accum + e }
   end
 end
+
